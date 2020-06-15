@@ -1,4 +1,4 @@
-## HomeSeer HS3 Docker Image
+## HomeSeer HS4 Docker Image
 
 This image containerizes the HomeSeer HS4 home automation software. 
 
