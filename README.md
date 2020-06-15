@@ -2,7 +2,7 @@
 
 This image containerizes the HomeSeer HS4 home automation software. 
 
-Current HomeSeer version: **HS4 4.0.1.37**
+Current HomeSeer version: **HS4 4.0.8.00**
 
 ### Running the HomeSeer Container
 
