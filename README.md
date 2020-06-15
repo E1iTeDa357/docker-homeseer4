@@ -27,7 +27,7 @@ docker run -d \
 `-p 10300:10300`: Port 10300, used by myHS.  
 `-p 10401:10401`: Port 10401, used by speaker clients.  
 `--device /dev/ttyUSB0`: Pass a USB device at /dev/ttyUSB0 (i.e. a USB Zwave interface) into the container; replace `ttyUSB0` with the actual name of your device (e.g. ttyUSB1, ttyACM0, etc.).
-`e1ite/docker-homeseer:latest`: See below for descriptions of available image tags.
+`e1ite/docker-homeseer4:latest`: See below for descriptions of available image tags.
 
 ### Available Image Tags
 
@@ -42,7 +42,7 @@ This image will be updated shortly after a new version of HomeSeer for Linux is 
 
 `docker stop homeseer` [or, whatever name you gave to the container via the `--name` parameter]
 `docker rm homeseer` [or, whatever name you gave to the container via the `--name` parameter]
-`docker pull e1ite/docker-homeseer`
+`docker pull e1ite/docker-homeseer4`
 
 ...then re-create your container using the same command-line parameters used at first run. The new HomeSeer version will be downloaded and installed when the container is run. Your existing user data, plugins, etc., will be preserved.
 
