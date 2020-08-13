@@ -62,8 +62,7 @@ To contribute, please fork the GitHub repo, create a feature branch, and raise a
 
 ### Acknowledgments
 
-This image was inspired by @marthoc's HomeSeer image (on Docker Hub at marthoc/homeseer).
-Thanks to @luck-y13 for updating DockerFile to latest version.
+This image was inspired by @marthoc's HomeSeer image (on Docker Hub at marthoc/homeseer), thanks to @luck-y13 for updating DockerFile to latest version.
 
 ### Changelog
 
