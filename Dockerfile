@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     etherwake \
     ssh-client \
     mosquitto-clients \
-    mono-vbnc \
+    mono-xsp4 \
     avahi-discover \
     libavahi-compat-libdnssd-dev \
     libnss-mdns \
