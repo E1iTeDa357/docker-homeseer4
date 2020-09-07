@@ -15,6 +15,7 @@ docker run -d \
     -p 10200:10200 \
     -p 10300:10300 \
     -p 10401:10401 \
+    -p 11000:11000 \
     --device /dev/ttyUSB0 \
     e1ite/docker-homeseer4:latest
 ```
