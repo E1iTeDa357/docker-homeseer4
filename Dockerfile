@@ -35,6 +35,6 @@ ARG AVAHI
 RUN [ "${AVAHI:-1}" = "1" ] || (echo "Removing Avahi" && rm -rf /etc/services.d/avahi /etc/services.d/dbus)
 
 VOLUME [ "/HomeSeer" ] 
-EXPOSE 80 8888 10200 10300 10401
+EXPOSE 80 8888 10200 10300 10401 11000
 
 ENTRYPOINT [ "/init" ]
