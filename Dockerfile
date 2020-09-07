@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
     libavahi-compat-libdnssd-dev \
     libnss-mdns \
     avahi-daemon avahi-utils mdns-scan \
-    ffmpeg aha flite alsa-utils alsa-utils \
+    ffmpeg aha flite alsa-utils alsa-utils mono-devel \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && touch /DO_INSTALL
