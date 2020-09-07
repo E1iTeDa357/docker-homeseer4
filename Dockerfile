@@ -15,11 +15,12 @@ RUN apt-get update && apt-get install -y \
     ssh-client \
     mosquitto-clients \
     mono-xsp4 \
+    mono-vbnc \
     avahi-discover \
     libavahi-compat-libdnssd-dev \
     libnss-mdns \
     avahi-daemon avahi-utils mdns-scan \
-    ffmpeg aha mono-devel aplay flite \
+    ffmpeg aha flite \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && touch /DO_INSTALL
