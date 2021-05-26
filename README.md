@@ -19,7 +19,8 @@ docker run -d \
     --device /dev/ttyUSB0 \
     e1ite/docker-homeseer4:latest
 ```
-#### Options:  
+#### Options: 
+`-e HOMESEER_VERSION=4_1_16_0 : to manually set the version number
 `--name homeseer`: Names the container "homeseer".  
 `-v /opt/homeseer:/HomeSeer`: Bind mount /opt/homeseer (or the directory of your choice) into the container for persistent storage. This directory on the host will contain the complete HomeSeer installation and could be moved between systems if necessary (be sure to shutdown HomeSeer cleanly first, via Tools - System - Shutdown HomeSeer).  
 `-v /etc/localtime:/etc/localtime:ro`: Ensure the container has the correct localtime.  
