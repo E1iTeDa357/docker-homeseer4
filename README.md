@@ -2,7 +2,7 @@
 
 This image containerizes the HomeSeer HS4 home automation software. 
 
-Current HomeSeer version: **HS4 4.0.8.00**
+Current HomeSeer version: **HS4 4.1.11.0**
 
 ### Running the HomeSeer Container
 
@@ -15,10 +15,12 @@ docker run -d \
     -p 10200:10200 \
     -p 10300:10300 \
     -p 10401:10401 \
+    -p 11000:11000 \
     --device /dev/ttyUSB0 \
     e1ite/docker-homeseer4:latest
 ```
-#### Options:  
+#### Options: 
+`-e HOMESEER_VERSION=4_1_16_0 : to manually set the version number
 `--name homeseer`: Names the container "homeseer".  
 `-v /opt/homeseer:/HomeSeer`: Bind mount /opt/homeseer (or the directory of your choice) into the container for persistent storage. This directory on the host will contain the complete HomeSeer installation and could be moved between systems if necessary (be sure to shutdown HomeSeer cleanly first, via Tools - System - Shutdown HomeSeer).  
 `-v /etc/localtime:/etc/localtime:ro`: Ensure the container has the correct localtime.  
@@ -62,7 +64,7 @@ To contribute, please fork the GitHub repo, create a feature branch, and raise a
 
 ### Acknowledgments
 
-This image was inspired by @marthoc's HomeSeer image (on Docker Hub at marthoc/homeseer)
+This image was inspired by @marthoc's HomeSeer image (on Docker Hub at marthoc/homeseer), thanks to @luck-y13 for updating DockerFile to latest version.
 
 ### Changelog
 
