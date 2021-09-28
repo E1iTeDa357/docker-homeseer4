@@ -43,7 +43,7 @@ docker run -d \
 
 | Tag | Description |
 |-----|-------------|
-| `latest` | The latest version of HomeSeer 3 for Linux including avahi-daemon and dbus-daemon for wider plugin support|
+| `latest` | The latest version of HomeSeer 4 for Linux including avahi-daemon and dbus-daemon for wider plugin support|
 
 
 ### Updating HomeSeer
