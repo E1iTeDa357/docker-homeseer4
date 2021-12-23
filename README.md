@@ -20,15 +20,23 @@ docker run -d \
     e1ite/docker-homeseer4:latest
 ```
 #### Options: 
-`-e HOMESEER_VERSION=4_2_7_0 : to manually set the version number
-`--name homeseer`: Names the container "homeseer".  
-`-v /opt/homeseer:/HomeSeer`: Bind mount /opt/homeseer (or the directory of your choice) into the container for persistent storage. This directory on the host will contain the complete HomeSeer installation and could be moved between systems if necessary (be sure to shutdown HomeSeer cleanly first, via Tools - System - Shutdown HomeSeer).  
-`-v /etc/localtime:/etc/localtime:ro`: Ensure the container has the correct localtime.  
-`-p 80:80`: Port 80, used by the HomeSeer web user interface (specify a different WebUI listen port by changing the first number, e.g. `-p 8080:80` to listen on port 8080 instead).  
-`-p 10200:10200`: Port 10200, used by HSTouch.  
-`-p 10300:10300`: Port 10300, used by myHS.  
-`-p 10401:10401`: Port 10401, used by speaker clients.  
-`--device /dev/ttyUSB0`: Pass a USB device at /dev/ttyUSB0 (i.e. a USB Zwave interface) into the container; replace `ttyUSB0` with the actual name of your device (e.g. ttyUSB1, ttyACM0, etc.).
+`-e HOMESEER_VERSION=4_2_7_0` : to manually set the version number
+
+`--name homeseer` : Names the container "homeseer"
+-v /opt/homeseer:/HomeSeer: Bind mount /opt/homeseer (or the directory of your choice) into the container for persistent storage. This directory on the host will contain the complete HomeSeer installation and could be moved between systems if necessary (be sure to shutdown HomeSeer cleanly first, via Tools - System - Shutdown HomeSeer)
+
+`-v /etc/localtime:/etc/localtime:ro`: Ensure the container has the correct localtime
+
+`-p 80:80`: Port 80, used by the HomeSeer web user interface (specify a different WebUI listen port by changing the first number, e.g. -p 8080:80 to listen on port 8080 instead)
+
+`-p 10200:10200`: Port 10200, used by HSTouch
+
+`-p 10300:10300`: Port 10300, used by myHS
+
+`-p 10401:10401`: Port 10401, used by speaker clients
+
+`--device /dev/ttyUSB0`: Pass a USB device at /dev/ttyUSB0 (i.e. a USB Zwave interface) into the container; replace `ttyUSB0` with the actual name of your device (e.g. ttyUSB1, ttyACM0, etc.)
+
 `e1ite/docker-homeseer4:latest`: See below for descriptions of available image tags.
 
 ### Available Image Tags
@@ -58,7 +66,7 @@ This image currently only runs on amd64/x86_64.
 
 ### Issues / Contributing
 
-Please raise any issues with this container, including any missing plugin dependencies, at its GitHub repo: https://github.com/e1ite/docker-homeseer4. Please check the "Gotchas / Known Issues" section above before raising an Issue on GitHub in case the issue is already known.
+Please raise any issues with this container, including any missing plugin dependencies, at its GitHub repo: https://github.com/E1iTeDa357/docker-homeseer4. Please check the "Gotchas / Known Issues" section above before raising an Issue on GitHub in case the issue is already known.
 
 To contribute, please fork the GitHub repo, create a feature branch, and raise a Pull Request; for simple changes/fixes, it may be more effective to raise an Issue instead.
 
