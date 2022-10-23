@@ -2,7 +2,7 @@ FROM mono:latest
 
 ENV S6_VERSION=v1.21.4.0
 ENV LANG=en_US.UTF-8
-ENV HOMESEER_VERSION=4_2_13_0
+ENV HOMESEER_VERSION=4_2_16_0
 
 
 RUN apt-get update && apt-get install -y \
